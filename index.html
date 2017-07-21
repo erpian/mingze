@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>清华大学家族事件</title>
+
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="inc/colorbox.css" type="text/css" media="screen">
+
+</head>
+<body>
+    <script src="/demos/googlegg.js"></script>
+
+    <div class="container">
+        <h1>清华大学家族事件</h1>
+        <p class="lead"></p>
+
+        <h2>开始到现在</h2>
+
+
+        <div id="timelineContainer" class="timelineContainer">
+
+            <div class="timelineToggle"><p><a class="expandAll">+ 全部展开</a></p></div>
+
+            <br class="clear">
+
+            <div class="timelineMajor">
+                <h2 class="timelineMajorMarker"><span>2017-07-20</span></h2>
+                <dl class="timelineMinor">
+                    <dt id="20170720"><a>【活动】家族跳跳-忍苦1</a></dt>
+                    <dd class="timelineEvent" id="20170720EX" style="display:none;">
+                        <h3>晚间21：00</h3>
+                        <p>
+                            奖励：
+                            第一名：2.8<br/>
+                            第二名：2个1.2 + 300P<br />
+                            第三名：1个1.2 + 200P<br />
+                            另设参与奖3名：每人188蜗牛邮票<br />
+                            <br />
+                            获奖人员：<br />
+                            第一：夏天<br />
+                            第二：good<br />
+                            第三：阿呆<br />
+                            参与奖：<br />
+                            安卓、梦失无意、字母<br />
+                        </p>
+                        <br class="clear">
+                    </dd><!-- /.timelineEvent -->
+                </dl><!-- /.timelineMinor -->
+            </div>
+
+            <div class="timelineMajor">
+                <h2 class="timelineMajorMarker"><span>2017-07-15</span></h2>
+                <dl class="timelineMinor">
+                    <dt id="20170715"><a>【活动】疯狂1.2</a></dt>
+                    <dd class="timelineEvent" id="20170715EX" style="display:none;">
+                        <h3>晚间：22：00</h3>
+                        <p>
+                            本次共放送了11件1.2。
+                        </p>
+                        <br class="clear">
+                    </dd><!-- /.timelineEvent -->
+                </dl><!-- /.timelineMinor -->
+            </div>
+
+            <!-- 家族建立 -->
+            <div class="timelineMajor">
+                <h2 class="timelineMajorMarker"><span>2017-07-11</span></h2>
+                <dl class="timelineMinor">
+                    <dt id="20170711"><a>【事件】家族建立</a></dt>
+                    <dd class="timelineEvent" id="20170711EX" style="display:none;">
+                        <h3>晚间：20：00</h3>
+                        <p>
+                            清华大学家族成立！
+                        </p>
+                        <br class="clear">
+                    </dd><!-- /.timelineEvent -->
+                </dl><!-- /.timelineMinor -->
+            </div>
+            <br class="clear">
+        </div>
+
+    </div><!-- /.container -->
+    <!-- GLOBAL CORE SCRIPTS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="inc/colorbox.js"></script>
+    <script type="text/javascript" src="js/timeliner.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.timeliner({
+                startOpen: ['#20170720EX', '#20170715EX']
+            });
+            $.timeliner({
+                timelineContainer: '#timelineContainer_2'
+            });
+            // Colorbox Modal
+            $(".CBmodal").colorbox({ inline: true, initialWidth: 100, maxWidth: 682, initialHeight: 100, transition: "elastic", speed: 750 });
+        });
+    </script>
+
+</body>
+</html>
